@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sanjula &amp; Tasos · Wedding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Archivo:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./assets/site.css" />
+<script src="./assets/image-slot.js"></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav nav-center" id="nav">
+    <div class="nav-links">
+      <a href="#countdown">Countdown</a>
+      <a href="#story">Where we met</a>
+      <a href="#travel">Travel &amp; Stay</a>
+      <a href="#rsvp" class="cta">RSVP</a>
+    </div>
+  </nav>
+
+  <!-- ============ COVER (flip) ============ -->
+  <header class="cover" id="top" data-screen-label="Cover">
+    <div class="cover-inner">
+      <div class="std-script reveal in">Save the Dates</div>
+      <div class="cover-names">
+        <h1 class="nm l reveal in">Sanjula</h1>
+        <div class="flip-wrap reveal in">
+          <div class="flip-frame" style="background-color: rgb(12, 23, 51)">
+            <div class="flip-stage" aria-hidden="true">
+              <div class="flip-inner" id="flipInner">
+                <div class="face front"><img id="faceFront" src="./assets/photos/athens-couple.jpg" alt="Sanjula and Tasos" /></div>
+                <div class="face back"><img id="faceBack" src="./assets/photos/taj.jpg" alt="Sanjula and Tasos" /></div>
+              </div>
+            </div>
+            <div class="polaroid-player" id="player" data-yt="etThdyVhzcw">
+              <button type="button" class="pp-btn" id="ppBtn" aria-label="Play our song">
+                <svg class="pp-ico-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="pp-ico-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+              </button>
+              <div class="pp-eq" id="ppEq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <span class="pp-title" style="font-size: 7px">Invisible String</span>
+            </div>
+          </div>
+          <div class="flip-cap">double the celebration</div>
+          <audio id="song" data-src="./assets/song.mp3" loop></audio>
+          <div id="ytHost" style="position:fixed;width:200px;height:120px;left:-9999px;bottom:0;opacity:0;pointer-events:none;" aria-hidden="true"></div>
+        </div>
+        <h1 class="nm r reveal in">Tasos</h1>
+      </div>
+      <div class="cover-meta reveal in">
+        <div class="place">Chandigarh, India &nbsp;·&nbsp; Athens, Greece</div>
+      </div>
+    </div>
+    <div class="scrollcue"><span>Scroll</span><span class="ln"></span></div>
+  </header>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Sanjula &amp; Tasos</span><span>25th–27th February · Chandigarh, India</span><span>3rd October · Athens, Greece</span>
+      <span>Sanjula &amp; Tasos</span><span>25th–27th February · Chandigarh, India</span><span>3rd October · Athens, Greece</span>
+    </div>
+  </div>
+
+  <!-- ============ PASSPORT / POSTCARDS ============ -->
+  <section class="passport sec-pad" id="passport" data-screen-label="The Itinerary">
+    <div class="wrap center">
+      <h2 class="big-title reveal d1">Two cities, <em>two stamps</em></h2>
+    </div>
+    <div class="wrap">
+      <div class="cards">
+        <figure class="postcard pc1 reveal">
+          <div class="pc-frame">
+            <img src="./assets/posters/chandigarh.png" alt="Chandigarh, 25th–27th February 2027" />
+            <div class="stamp-round r-chd"><span class="sr-top">Arrival</span><span class="sr-mid">CHD</span><span class="sr-bot">FEB 2027</span></div>
+          </div>
+          <figcaption>
+            <div class="pc-field"><span class="k">Destination</span><span class="v">Chandigarh, India</span></div>
+            <div class="pc-field"><span class="k">Dates</span><span class="v">25th–27th February 2027</span></div>
+            <div class="pc-field"><span class="k">Fly to</span><span class="v">Delhi · DEL</span></div>
+          </figcaption>
+        </figure>
+        <figure class="postcard pc2 reveal d1">
+          <div class="pc-frame">
+            <img src="./assets/posters/athens-v3.png" alt="Athens, 3rd October 2027" />
+            <div class="stamp-round r-ath"><span class="sr-top">Arrival</span><span class="sr-mid">ATH</span><span class="sr-bot">OCT 2027</span></div>
+          </div>
+          <figcaption>
+            <div class="pc-field"><span class="k">Destination</span><span class="v">Athens, Greece</span></div>
+            <div class="pc-field"><span class="k">Date</span><span class="v">3rd October 2027</span></div>
+            <div class="pc-field"><span class="k">Fly to</span><span class="v">Athens · ATH</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="on-wine sec-pad tight-top" id="countdown" data-screen-label="Countdown">
+    <div class="wrap center">
+      <span class="kicker reveal">The count is on</span>
+      <h2 class="big-title reveal d1">Counting down <em>to both</em></h2>
+      <div class="cd-grid">
+        <div class="cd-card reveal" id="cd-chd">
+          <div class="cd-city">Chandigarh</div>
+          <div class="cd-when">25th–27th February 2027</div>
+          <div class="cd-clock">
+            <div class="cd-unit"><span class="cd-num" data-u="d">00</span><span class="cd-lab">Days</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="h">00</span><span class="cd-lab">Hrs</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="m">00</span><span class="cd-lab">Min</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="s">00</span><span class="cd-lab">Sec</span></div>
+          </div>
+          <div class="cd-passed" style="display:none">We're married. See you in Athens.</div>
+        </div>
+        <div class="cd-card reveal d1" id="cd-ath">
+          <div class="cd-city">Athens</div>
+          <div class="cd-when">3rd October 2027</div>
+          <div class="cd-clock">
+            <div class="cd-unit"><span class="cd-num" data-u="d">00</span><span class="cd-lab">Days</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="h">00</span><span class="cd-lab">Hrs</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="m">00</span><span class="cd-lab">Min</span></div>
+            <div class="cd-unit"><span class="cd-num" data-u="s">00</span><span class="cd-lab">Sec</span></div>
+          </div>
+          <div class="cd-passed" style="display:none">That's a wrap. Thank you.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RED THREAD ============ -->
+  <section class="story on-cream sec-pad" id="story" data-screen-label="Our Story">
+    <div class="wrap center">
+      <div class="thread-stage reveal">
+        <svg class="thread-svg" viewBox="0 0 1100 320" role="img" aria-label="A red thread from Chandigarh and Athens meeting in London in 2022">
+          <path id="threadPath" class="thread-path" d="M 150 170 C 280 80, 360 80, 430 140 C 500 200, 540 260, 550 180 C 558 112, 600 120, 670 140 C 760 165, 840 220, 950 170" />
+          <circle class="knot" cx="550" cy="178" r="7" />
+          <circle class="node-ring" cx="550" cy="178" r="15" />
+          <text class="node-year" x="550" y="138" text-anchor="middle">2022</text>
+          <circle class="node-dot" cx="150" cy="170" r="6" />
+          <circle class="node-ring" cx="150" cy="170" r="13" />
+          <text class="node-label" x="150" y="225" text-anchor="middle" font-size="26">Chandigarh</text>
+          <text class="node-sub" x="150" y="248" text-anchor="middle">India</text>
+          <text class="node-label" x="550" y="272" text-anchor="middle" font-size="26">London</text>
+          <text class="node-sub" x="550" y="295" text-anchor="middle">Where we met</text>
+          <circle class="node-dot" cx="950" cy="170" r="6" />
+          <circle class="node-ring" cx="950" cy="170" r="13" />
+          <text class="node-label" x="950" y="225" text-anchor="middle" font-size="26">Athens</text>
+          <text class="node-sub" x="950" y="248" text-anchor="middle">Greece</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- divider -->
+  <div class="marquee dark" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Chandigarh, India</span><span>Athens, Greece</span><span>Sanjula &amp; Tasos</span>
+      <span>Chandigarh, India</span><span>Athens, Greece</span><span>Sanjula &amp; Tasos</span>
+    </div>
+  </div>
+
+  <!-- ============ TRAVEL & STAY ============ -->
+  <section class="on-cream sec-pad" id="travel" data-screen-label="Travel and Stay">
+    <div class="wrap">
+      <h2 class="tv-headline reveal">Travel &amp; Stay</h2>
+      <div class="tv-body">
+        <div class="tv-photo reveal d1">
+          <div class="film"><div class="pic"><image-slot id="tv-photo" src="./assets/photos/celebration.jpg" placeholder="Drop a travel photo" shape="rect"></image-slot><span class="date-stamp">CHANDIGARH</span></div></div>
+        </div>
+        <div class="tv-cols">
+          <div class="tv-col reveal d1">
+            <h3>For Chandigarh</h3>
+            <div class="air">Fly into Indira Gandhi International (DEL)</div>
+            <ul class="tv-steps">
+              <li><span class="tv-mode">Fly</span><span class="tv-desc">Direct flights into Delhi run from most major cities. Indira Gandhi International is the gateway.</span></li>
+              <li><span class="tv-mode">Then train</span><span class="tv-desc">Fast trains reach Chandigarh in roughly 3–3½ hours.</span></li>
+              <li><span class="tv-mode">Or taxi</span><span class="tv-desc">Around 4–5 hours by road, door to door.</span></li>
+              <li><span class="tv-mode">Or fly on</span><span class="tv-desc">Short connecting flights reach Chandigarh in about an hour.</span></li>
+            </ul>
+          </div>
+          <div class="tv-col reveal d2">
+            <h3>For Athens</h3>
+            <div class="air">Fly into Athens International (ATH)</div>
+            <ul class="tv-steps">
+              <li><span class="tv-mode">Fly</span><span class="tv-desc">Direct flights into Athens run from across Europe and beyond, year-round.</span></li>
+              <li><span class="tv-mode">Into town</span><span class="tv-desc">Airport metro and taxis reach the centre in about 40 minutes.</span></li>
+              <li><span class="tv-mode">Details</span><span class="tv-desc">Venue and area notes will follow with the Athens invitation.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="tv-note reveal">Once your tickets for India are booked, please feel free to message Sanjula for help with booking a train or taxi.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOTELS ============ -->
+  <section class="on-wine sec-pad" id="hotels" data-screen-label="Stay">
+    <div class="wrap center">
+      <span class="kicker reveal">Where to stay · Chandigarh</span>
+      <h2 class="big-title reveal d1">Our <em>recommendations</em></h2>
+    </div>
+    <div class="wrap">
+      <div class="htl-grid">
+        <article class="htl reveal">
+          <span class="htl-no">№ 01</span>
+          <h3>The LaLiT Chandigarh</h3>
+          <div class="htl-loc">RAJIV GANDHI IT PARK · CHANDIGARH</div>
+          <p class="htl-note">A grand, well-appointed stay with everything taken care of.</p>
+        </article>
+        <article class="htl reveal d1">
+          <span class="htl-no">№ 02</span>
+          <h3>Hyatt Regency</h3>
+          <div class="htl-loc">ADJOINING ELANTE MALL, CHANDIGARH</div>
+          <p class="htl-note">A comfortable, reliable choice, and it's right next to the mall.</p>
+        </article>
+        <article class="htl reveal d2">
+          <span class="htl-no">№ 03</span>
+          <h3>Hyatt Centric </h3>
+          <div class="htl-loc">Sector 17, Chandigarh</div>
+          <p class="htl-note">Central, in the heart of Sector 17, walkable to plenty.</p>
+        </article>
+        <article class="htl reveal d3">
+          <span class="htl-no">№ 04</span>
+          <h3>The Bella Vista</h3>
+          <div class="htl-loc">Panchkula · Chandigarh</div>
+          <p class="htl-note">A lovely option with plenty of cafes right underneath it.</p>
+        </article>
+      </div>
+      <div class="htl-help reveal">
+        <div class="hh-text">
+          <h4>Want something else? </h4>
+          <p>Chandigarh is small and well connected, so there's plenty of choice. If you'd rather stay elsewhere, or need a hand with outfits, bookings or anything at all, just speak to Sanjula. Happy to help with all of it.</p>
+        </div>
+        <div class="hh-contact">
+          <span class="hh-name">Call or message Sanjula</span><br />
+          <a class="hh-num" href="https://wa.me/447880330016" target="_blank" rel="noopener">+44 7880 330016</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee dark rev" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Join us · Chandigarh &amp; Athens 2027</span><span>Sanjula &amp; Tasos</span><span>Two cities, two celebrations</span>
+      <span>Join us · Chandigarh &amp; Athens 2027</span><span>Sanjula &amp; Tasos</span><span>Two cities, two celebrations</span>
+    </div>
+  </div>
+  <section class="rsvp sec-pad" id="rsvp" data-screen-label="RSVP">
+    <div class="wrap center">
+      <h2 class="rsvp-title reveal">(RSVP)</h2>
+      <div class="rsvp-intro reveal d1">
+        <p>Our lives have taken us across countries, cities, and continents, and we're incredibly grateful for the people we've met along the way. This wedding is not only a celebration of us, but also a chance to bring together the friends and family who have been part of our journey.</p>
+        <p>Please let us know by 15th November. If you're RSVPing on behalf of your partner or family members, kindly include them as well.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="rsvp-card reveal d1" id="rsvpCard">
+        <form class="rsvp-form" id="rsvpForm">
+          <div class="field">
+            <label for="rsvpName">Your name</label>
+            <input class="txt" id="rsvpName" name="name" type="text" placeholder="First and last name" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label>Which celebrations will you join? <span class="lab-note">You can tick both</span></label>
+            <div class="choice-row three">
+              <label class="choice">
+                <input type="checkbox" name="chd" />
+                <span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="ch-txt"><span class="ch-city">Chandigarh</span><span class="ch-when">
+25TH–27TH FEB</span></span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="ath" />
+                <span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="ch-txt"><span class="ch-city">Athens</span><span class="ch-when">     
+ 3RD OCT </span></span>
+              </label>
+              <label class="choice cant">
+                <input type="checkbox" name="cant" />
+                <span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="ch-txt"><span class="ch-city">Can't make it</span></span>
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <label>Bringing your partner / family?</label>
+            <div class="guests">
+              <div class="stepper">
+                <button type="button" id="gMinus" aria-label="Fewer guests">–</button>
+                <span class="count" id="guestCount">0</span>
+                <button type="button" id="gPlus" aria-label="More guests">+</button>
+              </div>
+              <span class="g-hint">up to 4 guests (not counting you)</span>
+            </div>
+            <div class="guest-names" id="guestNames"></div>
+          </div>
+          <button type="submit" class="submit">Send our RSVP</button>
+          <p class="rsvp-alt">Prefer to message directly? WhatsApp Sanjula / Tasos.</p>
+        </form>
+        <div class="rsvp-done">
+          <h3>Thank you ✦</h3>
+          <p>Your RSVP has been recorded. We can't wait to celebrate with you.</p>
+          <button class="again" id="rsvpAgain">Edit our answer</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer data-screen-label="Footer">
+    <div class="f-mono">Sanjula <span class="amp">&amp;</span> Tasos</div>
+    <div class="f-sub">Chandigarh 2027 &nbsp;·&nbsp; Athens 2027</div>
+    <p class="f-note">Formal invitations to follow.</p>
+  </footer>
+
+  <script src="./assets/site.js"></script>
+</body>
+</html>
