@@ -3,9 +3,9 @@
 /* ---- cover photo flip ---- */
 (function(){
   var frames = [
-    './assets/photos/athens-couple.jpg','./assets/photos/windsor.jpg','./assets/photos/taj.jpg',
-    './assets/photos/paris.jpg','./assets/photos/london-church.jpg','./assets/photos/india-temple.jpg'
-  ];
+  'athens-couple.jpg','windsor.jpg','taj.jpg',
+  'paris.jpg','london-church.jpg','india-temple.jpg'
+];
   var inner = document.getElementById('flipInner');
   var front = document.getElementById('faceFront');
   var back  = document.getElementById('faceBack');
